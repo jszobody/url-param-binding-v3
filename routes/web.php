@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Binding;
+use App\Livewire\Workaround;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('binding/{foo}', Binding::class);
+Route::get('binding/{foo}', Binding::class)->name('binding');
+
+Route::get('workaround/{foo}', Workaround::class)->name('workaround');
