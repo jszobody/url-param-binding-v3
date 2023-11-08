@@ -2,6 +2,12 @@
 
 This repo provides a minimal example of an issue we are having url parameter binding in Livewire v3.
 
+Component: https://github.com/jszobody/url-param-binding-v3/blob/main/app/Livewire/Binding.php
+
+View: https://github.com/jszobody/url-param-binding-v3/blob/main/resources/views/livewire/binding.blade.php
+
+## Issue
+
 We have a basic route parameter injected in the `mount()` method, stored as a Livewire public property, and changed with a method. 
 
 In Livewire v2, changing the parameter would automatically update the URL. See the v2 repo to see this in action:
