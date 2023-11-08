@@ -8,7 +8,7 @@ class Workaround extends Component
 {
     public $foo;
 
-    public $uri;
+    public $url;
 
     public function mount($foo)
     {
@@ -22,7 +22,7 @@ class Workaround extends Component
 
     public function render()
     {
-        $this->uri = route('workaround', $this->foo);
+        $this->url = route('workaround', $this->foo);
 
         return view('livewire.workaround');
     }

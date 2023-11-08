@@ -1,6 +1,6 @@
 <div
-    x-data="{ uri: @entangle('uri') }"
-    x-init="$watch('uri', value => history.pushState(value, '', value))"
+    x-data="{ url: @entangle('url') }"
+    x-init="$watch('url', value => history.pushState(value, '', value))"
 >
     <div>Foo is: {{ $foo }}</div>
     <br><br>
